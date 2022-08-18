@@ -1,0 +1,25 @@
+.Product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &__Name{
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    &__Image{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &__Price{
+        color: rgba(255, 0, 0, 0.6);
+        font-weight: 500;
+        align-self: flex-end;
+    }
+}
