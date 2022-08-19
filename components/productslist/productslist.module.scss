@@ -1,0 +1,19 @@
+.ProductsList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 5%;
+
+    &__Title {
+        padding-left: 10%;
+    }
+}
+
+@media(min-width: 600px){
+    .ProductsList {
+        display: grid;
+        grid-template-columns: 18% 18% 18% 18% 18%;
+        gap: 3%;
+    }
+}

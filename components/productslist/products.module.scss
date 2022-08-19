@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 3% 0;
 
     &__Name{
         font-weight: 600;
