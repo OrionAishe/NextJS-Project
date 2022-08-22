@@ -39,11 +39,15 @@ let products = [
     }
 ];
 
-const ProductsList = () => {
+const ProductsList = ({filter}) => {
     return <>
-    <h1 className={styles.ProductsList__Title}>Products</h1>
+    <h1 className={styles.ProductsList__Title}>Produtos</h1>
     <ul className={styles.ProductsList}>
-        {products.map((item) => {
+        {filter != null ? products.filter((item) => {
+            return item.name.includes(filter); 
+        }).map((item) => {
+            return <Products key={item.id} product={item} />
+        }): products.map((item) => {
             return <Products key={item.id} product={item} />
         })}
     </ul>

@@ -1,0 +1,33 @@
+.Searchbar {
+    display: flex;
+    position: relative;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    margin-bottom: 3%;
+    padding: 10px;
+
+    &__Input {
+        width: 95%;
+        font-size: 1rem;
+        border: none;
+
+        &:focus{
+            border: none;
+        }
+    }
+
+    &__Btn {
+        width: 30px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+
+        &:hover{
+            fill: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+    }
+}
