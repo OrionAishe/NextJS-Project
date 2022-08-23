@@ -7,6 +7,7 @@ const NavigationBar = () => {
             <Link href={"/"}>Loja X</Link>
         </div>
             <ul className={styles.Nav}>
+                <li className={styles.Nav__Item}><Link href="/admin">admin</Link></li>
                 <li className={styles.Nav__Item}><Link href="/Produtos">Produtos</Link></li>
                 <li className={styles.Nav__Item}><Link href={"/Contato"}>Contato</Link></li>
                 <li className={styles.Nav__Item}><Link href="/Local">Local</Link></li>

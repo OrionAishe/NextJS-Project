@@ -6,7 +6,7 @@ const Products = ({product}) => {
         className={styles.Product__Image}
         src={product.image} />
         <p className={styles.Product__Name}>{product.name}</p>
-        <p className={styles.Product__Price}>R${product.price} {product.vendingType}</p>
+        <p className={styles.Product__Price}>R${product.price} {product.vendingtype}</p>
     </li>
 }
 
